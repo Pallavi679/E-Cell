@@ -581,47 +581,7 @@ border-radius: 0%;
 
 
 
-/* i {
 
-  float: left;
-
-}
-.value{
-font-size: 100px;
-}
-.services .card
-{
-  
-margin: 30px;
-transition: transform 0.4s;
-transition-timing-function: ease-in-out;
-}
-.services .card:hover
-{
-transform: scale(1.1);
-
-}
-.card {
-color: #000;
-border: 1px;
-margin-top: 20px;
--webkit-box-shadow: 0 10px 20px 0 rgb(0 0 0 / 5%);
-box-shadow: 1px 20px 20px 5px rgb(0 0 0 / 5%);
-
-}
-/* .card- {
-  padding-left: 20px;
-  padding-right: 20px;
-  box-shadow: 0 0px 20px 0 rgba(202, 35, 35, 0.2);
-  background-color: white;
-  transition: 0.3s;
-} 
-
-.card .small-detail
-{
-font-size: 14px;
-color: #8B88B1;
-} */
 @import url("https://fonts.googleapis.com/css?family=Acme&display=swap");
 
 
