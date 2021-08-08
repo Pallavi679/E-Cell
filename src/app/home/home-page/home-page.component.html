@@ -1,0 +1,314 @@
+<ng-container style="min-width: 100%; min-height: 150%; z-index: 1; position: fixed;" *ngIf="loading">
+  <div class="d-flex justify-content-center loading">
+
+    <div class="loader">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+  </div>
+</ng-container>
+<!-- CSS only -->
+
+<ng-container>
+  <div class="container back text-center">
+    <!--*ngFor="let h of hData"-->
+    <div class="intro">
+      <div>
+        <div>
+          <img routerLink="/" class="logo img-responsive img-fluid sakeclogo" height="150px" width="150px" class="my-0"
+            src="https://firebasestorage.googleapis.com/v0/b/e-cell-sakec.appspot.com/o/homepage%2FOld%20Logo%201%20(1).png?alt=media&token=9238deda-98d3-4987-95f7-00ce8871dace">
+        </div>
+      </div>
+      <div class=" my-0">
+        <p style="font-family:'Bebas Neue', cursive; color: rgb(245,245,245);" class="about-container">
+          THE ENTREPRENEUR CELL SAKEC</p>
+
+      </div>
+      <div class=" my-0 ">
+        <p style="font-family:'Bebas Neue', cursive; color: rgb(245,245,245); font-size: 30px;" class="my-0">
+          INDUSTRIOUSNESS BRINGS PROSPERITY</p>
+      </div>
+      <div class="row">
+
+        <div class="  my-0 ">
+          <p style="font-family:'Bebas Neue', cursive; color: rgb(245,245,245);" id="typingtext" class="tag tw">
+
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+  <div class=" row d-flex justify-content-center" *ngIf="upId">
+
+    <div class="row d-flex justify-content-center" style="width: 100%;">
+      <p class="about text-center">Upcoming Event</p>
+    </div>
+
+    <div class="row d-flex justify-content-center upcoming" style="width: 100%; margin-top: 2%;">
+
+      <div class="col-sm d-flex justify-content-left ">
+        <img class="img-fluid upcomingimage shadow" src="{{upImage}}}" />
+      </div>
+
+      <div class="col d-flex">
+
+        <div class="upcomingcont">
+          <p class="about"><b>{{upTitle}}</b></p>
+          <p>{{upDesc | truncatetext:300}}<span class="readmore" routerLink="upcoming/{{upId}}"> ...read more</span></p>
+          <ng-container *ngIf="regEnabled; else customLink">
+            <button type="button" routerLink="register/{{upId}}" style="float: bottom; font-weight: 700;"
+              class="btn btn-success text-white">Register</button>
+          </ng-container>
+          <ng-template #customLink>
+            <button type="button" style="float: bottom; font-weight: 700;" class="btn btn-success text-white"><a
+                target="_blank" style="color: #fff; text-decoration: none;" attr.href="{{upLink}}">Register</a></button>
+          </ng-template>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div>
+    <!-- <div class="spacer" style="height: 20px;"></div>
+    <h2 class="h2 aim text-center my-1">Our Pillars</h2>
+
+    <div class="spacer" style="height: 100px;"></div> -->
+    <div class="spacer" style="height: 50px;"></div>
+    <div class="container text-center">
+
+
+      <div id="about" class="site-about site-white-section about-background">
+
+        <!-- Bootstrap -->
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+
+              <!-- H1 Heading -->
+              <h1>Our <strong>Pillars</strong></h1>
+
+              <!-- H2 heading -->
+              <h2>Our <span>50 Years of experience</span> <br>
+                will help you to grow your business</h2>
+
+              <!-- Paragraph -->
+              <div class="row">
+                <p class="col-xs-12 col-sm-10 col-sm-offset-1">
+                  Lorem Ipsum is simply dummy text of the printinLorem Ipsum is simply dummy text of the printing and
+                  typeseing industry Lorem Ipsum
+                  has been the industry's standard dummy text ever since the when an g and typeseing induLorem Ipsumf
+                  the printing and.
+                </p>
+              </div>
+
+              <!-- Clearfix -->
+              <div class="clearfix"></div>
+
+              <!-- Features -->
+              <div class="site-features">
+
+                <!-- Bootstrap nested columns -->
+                <div class="row">
+                  <div class="col-xs-12 col-sm-3">
+
+                    <!-- Link -->
+                    <a class="site-box" href="#">
+
+                      <!-- Figure -->
+                      <figure>
+                        <!-- Font-awesome icons -->
+                        <i class="fa fa-briefcase" style="margin-top: 15px;"></i>
+                      </figure>
+
+                      <!-- H3 heading -->
+                      <h3>Guidance & Support</h3>
+
+                      <!-- Paragraph -->
+                      <p>
+                        Guidance ensures that each individual’s choices must serve the interests of the society as well
+                        as the interest of the individual.
+                      </p>
+                    </a>
+
+                  </div>
+                  <div class="col-xs-12 col-sm-3">
+
+                    <!-- Link -->
+                    <a class="site-box" href="#">
+
+                      <!-- Figure -->
+                      <figure>
+                        <!-- Font-awesome icons -->
+                        <i class="fa fa-briefcase" style="margin-top: 15px;"></i>
+                      </figure>
+
+                      <!-- H3 heading -->
+                      <h3>Mentorship</h3>
+
+                      <!-- Paragraph -->
+                      <p>
+                        A mentorship is a relationship between two people where the individual with more experience,
+                        knowledge, and connections is able to pass along what they have learned to a more junior
+                        individual within a certain field.
+                      </p>
+                    </a>
+
+                  </div>
+                  <div class="col-xs-12 col-sm-3">
+
+                    <!-- Link -->
+                    <a class="site-box" href="#">
+
+                      <!-- Figure -->
+                      <figure>
+                        <!-- Font-awesome icons -->
+                        <i class="fa fa-bar-chart" style="margin-top: 15px;"></i>
+                      </figure>
+
+                      <!-- H3 heading -->
+                      <h3>Motivation</h3>
+
+                      <!-- Paragraph -->
+                      <p>
+                        Motivation is the process that initiates, guides, and maintains goal-oriented behaviors. It is
+                        what causes you to act, whether it is getting a glass of water to reduce thirst or reading a
+                        book to gain knowledge
+                      </p>
+
+                    </a>
+
+                  </div>
+                  <div class="col-xs-12 col-sm-3">
+
+                    <!-- Link -->
+                    <a class="site-box" href="#">
+
+                      <!-- Figure -->
+                      <figure>
+                        <!-- Font-awesome icons -->
+                        <i class="fa fa-search" style="margin-top: 15px;"></i>
+                      </figure>
+
+                      <!-- H3 heading -->
+                      <h3>Awareness</h3>
+
+                      <!-- Paragraph -->
+                      <p>
+                        Awareness is the state of being conscious of something specifically, it is the ability to
+                        directly know and perceive, to feel, or to be cognizant of events.
+                      </p>
+
+                    </a>
+
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- End Bootstrap -->
+
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="row d-flex justify-content-center blogsec">
+
+    <div class="row d-flex justify-content-center" style="height: auto;" *ngFor="let b of bData">
+
+      <div class="row d-flex justify-content-center" style="width: 100%; margin-top: 5%; " data-aos="fade-right "
+        data-aos-duration="3000">
+        <p class="about blog">"{{b.title}}"</p>
+      </div>
+
+      <div class="blogcont row d-flex justify-content-center" style="width: 100%; ">
+        <div class="col" style="display: inline; ">
+
+          <p>{{b.content | truncatetext:250}}<span class="readmore" routerLink="/blog">read more</span></p>
+
+        </div>
+      </div>
+
+      <div class="blogauth row d-flex justify-content-center" style="width: 100%;">
+        <p><b> - By {{b.author}}</b></p>
+      </div>
+
+    </div>
+
+  </div> -->
+
+  <div class="initiativesbackground">
+    <div class="row d-flex justify-content-center">
+      <div style="width: 100%;" class=" d-flex justify-content-center">
+        <p class="about aim-initiative">Our Initiatives</p>
+
+      </div>
+      <div class="h-desc">
+        We at E-Cell, Shah &Anchor  believe that entrepreneurship is the key to India’s development. To fulfill this
+        vision, we have conceptualized & successfully implemented various initiatives to help students, young
+        entrepreneurs & professionals in their entrepreneurial journey.
+      </div>
+
+      <div style="width: 100%; " class="d-flex justify-content-center row">
+        <div class="mainrow row">
+          <ng-container>
+            <div class="col-md-3" id="mycont" data-aos="zoom-in-up" data-aos-duration="3000">
+
+              <!-- <div class="card bg-transparent text-white">
+                <img class="card-img h-100 d-inline-block myimg" src="{{initiativeImg}}" alt="Card image"
+                  (load)="loading = false" />
+                <div class="card-img-overlay d-flex align-items-end">
+                </div>
+              </div> -->
+              <div class="cardmain my-2 shadow">
+                <div class="main-content ">
+
+                  <img src="{{initiativeImg}}" alt="Avatar" class=" img-thumbnail">
+                </div>
+                <h4 class="producticon">Computer Vision</h4>
+                <div class="overlay-content">
+                  <p>Hello World
+                    <span>
+                      <button type="button" class="btn btn-outline-success">Success</button>
+                    </span>
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </ng-container>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</ng-container>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/angular-animate/1.8.2/angular-animate.min.js"></script>
+<script>
+
+  var typed = new Typed('#typed', {
+    stringsElement: '#typed-strings',
+    typeSpeed: 80,
+    startDelay: 5,
+    backspeed: 80,
+    loop: true
+
+  });
+
+</script>
