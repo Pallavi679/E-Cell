@@ -90,7 +90,7 @@
 }
 .tag{
   font-size: 90px;
-  margin-top: 5%;
+  margin-top: 0%;
   margin-left:35%;
   margin-right: 35%;
   margin-bottom: 15%;
@@ -99,13 +99,13 @@
   text-align: center;
   filter: drop-shadow(3px 3px 3px #222); 
 }
-
+/* 
 .back{
-  background-image: url('https://firebasestorage.googleapis.com/v0/b/e-cell-sakec.appspot.com/o/homepage%2FWave-100s-1617px%20(4).png?alt=media&token=fbd55f89-f412-49b6-8336-6e4a6a63dda0');
+  /* background-image: url('https://firebasestorage.googleapis.com/v0/b/e-cell-sakec.appspot.com/o/homepage%2FWave-100s-1617px%20(4).png?alt=media&token=fbd55f89-f412-49b6-8336-6e4a6a63dda0'); 
   background-repeat: no-repeat;
   min-width: 100%;
   background-size: 100% 100%;
-}
+} */
 
 .playercont{
   width: 100%;

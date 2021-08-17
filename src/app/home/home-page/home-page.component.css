@@ -747,7 +747,7 @@ a {
 .site-features h3 {
   color: #1a1e2a;
   font-family: inherit;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 900;
   line-height: 14px;
   text-transform: uppercase;
@@ -756,10 +756,21 @@ a {
   margin-bottom: 20px;
  
 }
+.box{
+  padding:23px;
+  box-shadow: 1px 20px 20px 5px rgb(0 0 0 / 5%);
+}
+.site-box{
+  margin: 10px, 10px;
+  
+}
+.site-box:hover{
+  transform: scale(1.1);
+}
 .site-about p {
   color: #959595;
   font-family: inherit;
-  font-size: 13px;
+  font-size: 18px;
   font-weight: 700;
   line-height: 26px;
 }
