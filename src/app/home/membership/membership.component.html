@@ -1,22 +1,24 @@
-<ng-container style="min-width: 100%; min-height: 100%; z-index: 1; position: relative;" *ngIf="loading" >
+<ng-container style="min-width: 100%; min-height: 100%; z-index: 1; position: relative;" *ngIf="loading">
   <div class="d-flex justify-content-center loading">
     <div class="loader">
-  <div class="dot"></div>
-  <div class="dot"></div>
-  <div class="dot"></div>
-  <div class="dot"></div>
-  <div class="dot"></div>
-</div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
   </div>
 </ng-container>
-<ng-container class="d-flex justify-content-center">
+<div style="background-color: rgb(217, 213, 213);">
 
-  <h1 style="text-align: center; margin-bottom: 5%; font-weight: 700;">Register</h1>
-  <div class="formDiv row d-flex justify-content-center" >
+  <ng-container class="d-flex justify-content-center">
+    
+    <h1 style="text-align: center; margin-bottom: 5%; font-weight: 700;">Membership</h1>
+  <div class="formDiv row d-flex justify-content-center">
     <mat-form-field class="textfields" appearance="outline">
       <mat-label>First Name</mat-label>
       <input [(ngModel)]="fname" matInput placeholder="Type Here" (keydown)="checkfname($event)">
-      
+
     </mat-form-field>
     <!-- <span *ngIf="checkfname.invaild">Enter a vaild Name</span> -->
 
@@ -36,12 +38,11 @@
     </mat-form-field>
 
     <div class="row  xyz">
-      <div class="col-md-6  justify-content-center" >
+      <div class="col-md-6  justify-content-center">
         <mat-form-field style="width: 100%; " appearance="outline">
           <mat-label>Year</mat-label>
           <mat-select [(ngModel)]="class">
-            <mat-option style="background-color:#018abd; font-weight: 700;" *ngFor="let y of yData "
-              [value]="y.name">
+            <mat-option style="background-color:#b7b7b7; font-weight: 700;" *ngFor="let y of yData " [value]="y.name">
               {{y.name}}
             </mat-option>
           </mat-select>
@@ -51,8 +52,7 @@
         <mat-form-field style="width: 100%;" appearance="outline">
           <mat-label>Division</mat-label>
           <mat-select [(ngModel)]="division">
-            <mat-option style="background-color:#018abd; font-weight: 700;" *ngFor="let d of dData "
-              [value]="d.num">
+            <mat-option style="background-color:#b7b7b7; font-weight: 700;" *ngFor="let d of dData " [value]="d.num">
               {{d.num}}
             </mat-option>
           </mat-select>
@@ -64,6 +64,8 @@
       <input [(ngModel)]="rollNo" type="number" maxlength="3" matInput placeholder="Type Here">
     </mat-form-field>
 
-    <button class="textfields" (click)="membership()" mat-raised-button color="primary" [disabled]="!fname || !lname || !email || !phone">{{buttonText}}</button>
+    <button class="textfields" (click)="membership()" mat-raised-button color="primary"
+      [disabled]="!fname || !lname || !email || !phone">{{buttonText}}</button>
   </div>
 </ng-container>
+  </div>

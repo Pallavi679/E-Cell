@@ -1,4 +1,4 @@
-<div class="mainback">
+<div class="mainback" >
   <ng-container style="min-width: 100%; min-height: 100%; z-index: 1; position: relative;" *ngIf="loading">
     <div class="d-flex justify-content-center loading">
       <div class="loader">
@@ -10,11 +10,15 @@
       </div>
     </div>
   </ng-container>
+</div>
+  <div class="back"style="background-color: rgb(129, 129, 129);" >
 
-  <div class="container">
-    <div class="row">
-      <div class="col d-flex justify-content-center">
-        <h1 style="font-family:'Bebas Neue', cursive;" class="tag">Council</h1>
+    <div class="container ">
+      <div class="row">
+        <div class="col d-flex justify-content-center">
+          <h1 style="font-family:'Bebas Neue', cursive; color: white; margin-top: 20%; position: relative; top: -150px;"
+            class="tag">Council</h1>
+        </div>
       </div>
     </div>
   </div>
@@ -46,42 +50,37 @@
   
     </div>
   </div> -->
- 
-  <div class="mainrow">
-    <ng-container *ngFor="let m of mData">
-      <div class="p-2 ml-2"  >
+
+  <div class="mainrow" style="background-color: rgb(129, 129, 129);">
+    <ng-container *ngFor="let m of mData, let t of tData">
+      <div class="p-2 ml-2">
 
 
-       
-          <div class="our-team ">
-            <div class="picture">
-              <img class="img-fluid  h-100 d-inline-block myimg" src="{{m.image}}">
-            </div>
 
-            <div class="team-content text-center">
-
-              <h3 class="name">{{m.name}}</h3>
-              <p class=" text-center name">{{m.team}}</p>
-              <h4 class="title teamname">{{m.position}}</h4>
-
-
-            </div>
-
-            <ul class="social">
-              <li><a href="" class="fa fa-facebook" aria-hidden="true"></a>
-              </li>
-              <li><a href="" class="fa fa-twitter" aria-hidden="true"></a></li>
-              <li><a href="" class="fa fa-google-plus" aria-hidden="true"></a>
-              </li>
-              <li><a href="" class="fa fa-linkedin" aria-hidden="true"></a>
-              </li>
-            </ul>
+        <div class="our-team shadow">
+          <div class="picture">
+            <img class="img-fluid  h-100 d-inline-block myimg" src="{{m.image}}">
           </div>
-      
+
+          <div class="team-content text-center">
+
+            <h3 class="name">{{m.name}}</h3>
+            <p class=" text-center name">{{m.team}}</p>
+            <h4 class="title teamname">{{m.position}}</h4>
 
 
+          </div>
 
-
+          <ul class="social">
+            <li><a href="{{t.f_link}}" class="fa fa-facebook" aria-hidden="true" target="blank"></a>
+            </li>
+            <li><a href="{{t.t_link}}" class="fa fa-twitter" aria-hidden="true" target="blank"></a></li>
+            <li><a href="mailto:{{t.mail}}" class="fa fa-google-plus" aria-hidden="true"></a>
+            </li>
+            <li><a href="{{t.linkedin}}" class="fa fa-linkedin" aria-hidden="true" target="blank"></a>
+            </li>
+          </ul>
+        </div>
 
       </div>
     </ng-container>

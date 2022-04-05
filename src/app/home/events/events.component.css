@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Arapey&family=Crimson+Pro:wght@200&family=Old+Standard+TT&family=Playfair+Display&display=swap');
 
 .tag{
+  position: relative;
+  top: -180px;
     font-size: 90px;
-    margin-top: 5%;
+    margin-top: 20%;
     margin-left:5%;
     margin-right: 5%;
     margin-bottom: 5%;
-    color: #000;
+    color: white;
     font-style: italic;
     filter: drop-shadow(3px 3px 3px #222); 
   }
@@ -102,7 +104,8 @@
   }
  
 .back{
-    /* background-image: url('https://firebasestorage.googleapis.com/v0/b/e-cell-sakec.appspot.com/o/homepage%2FWave-100s-1617px%20(4).png?alt=media&token=fbd55f89-f412-49b6-8336-6e4a6a63dda0'); */
+  margin-top: 1px;
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/e-cell-sakec.appspot.com/o/Events%2Fsvg.png?alt=media&token=d57d5410-6502-4796-91b2-ae2b329f3f42');
     background-repeat: no-repeat;
     min-width: 100%;
     background-size: 100% 100%;
@@ -116,7 +119,7 @@
 }
 
 .upcoming{
-  width: 80%;
+  width: 90%;
   display: grid;
   grid-template-columns:auto;
   grid-gap: 40px;
@@ -129,16 +132,16 @@
 .event{
   width: 100%;
   display: grid;
-  grid-template-columns:auto auto auto auto;
-  grid-gap: 40px;
+  grid-template-columns:auto auto auto;
+  grid-gap: 50px;
   padding-right: 30px;
   padding-left: 30px;
-  
+  height: 90vh;
   
   
 }
 .item {
-  grid-column-start: 2;
+  grid-column-start: 4;
 }
 .parent{
   padding: 20px; 
@@ -149,7 +152,7 @@
   border-right: none;
   border-width: 5px;
   margin-top: 10px;
-  background-color: #fff;
+  background-color: rgb(201, 201, 201);
   text-align: left;
  
 }
@@ -162,7 +165,7 @@
   border-right: none;
   border-width: 5px;
   margin-top: 10px;
-  background-color: #fff;
+  background-color: rgb(201, 201, 201);
   text-align: left;
   margin-right: -250px;
   margin-left: 450px;
@@ -185,6 +188,11 @@
 
 .postTitle{
     font-size: 25px;
+}
+@media screen and (max-width:1024px) {
+.parent{
+  height:33vh;
+}
 }
 
 .postAuthor{

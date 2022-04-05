@@ -6,7 +6,9 @@
   background:#fff;
   
 }
-
+body{
+  background-color: #000;
+}
 
 
 .loader {
@@ -107,7 +109,7 @@
   }
  
 .back{
-    background-image: url('https://firebasestorage.googleapis.com/v0/b/e-cell-sakec.appspot.com/o/homepage%2FWave-100s-1617px%20(4).png?alt=media&token=fbd55f89-f412-49b6-8336-6e4a6a63dda0');
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/e-cell-sakec.appspot.com/o/Events%2Fsvg.png?alt=media&token=d57d5410-6502-4796-91b2-ae2b329f3f42');
     background-repeat: no-repeat;
     min-width: 100%;
     background-size: 100% 100%;
@@ -121,12 +123,13 @@
 }
 
  .mainrow {
-   margin-left: 30px;
+   padding-left: 30px;
+   /* margin-left: 30px; */
   display: grid;
   grid-template-columns:  auto auto auto auto;
   grid-template-rows: auto auto auto auto;
   grid-gap: 0px;
-  margin-bottom: 7%;
+  /* margin-bottom: 7%; */
 } 
 
 ng-container{
@@ -233,7 +236,7 @@ ng-container{
 .our-team {
   padding: 30px 0 40px;
   margin-bottom: 20px;
-  background-color: #f7f5ec;
+  background-color: #d5d8dadb;
   text-align: center;
   overflow: hidden;
   position: relative;
@@ -268,7 +271,7 @@ ng-container{
   width: 100%;
   height: 0;
   border-radius: 50%;
-  background-color: #1369ce;
+  background-color: #3c3c3cdb;
   position: absolute;
   bottom: 135%;
   right: 0;
@@ -287,7 +290,7 @@ ng-container{
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: #1369ce;
+  background-color: #3c3c3cdb;
   position: absolute;
   top: 0;
   left: 0;
@@ -318,7 +321,7 @@ ng-container{
   width: 100%;
   padding: 0;
   margin: 0;
-  background-color: #1369ce;
+  background-color: #3c3c3cdb;
   position: absolute;
   bottom: -100px;
   left: 0;
@@ -343,7 +346,7 @@ ng-container{
 }
 
 .our-team .social li a:hover {
-  color: #1369ce;
+  color: #878686db;
   background-color: #f7f5ec;
 }
 /* .team-content{

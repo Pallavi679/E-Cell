@@ -1,11 +1,11 @@
 
 .tag{
-    font-size: 90px;
+    font-size: 84px;
     margin-top: 5%;
     margin-left:35%;
     margin-right: 35%;
     margin-bottom: 15%;
-    color: #000;
+    color: white;
     font-style: italic;
     filter: drop-shadow(3px 3px 3px #222); 
   }
@@ -102,7 +102,7 @@
   }
   
 .back{
-    background-image: url('https://firebasestorage.googleapis.com/v0/b/e-cell-sakec.appspot.com/o/homepage%2FWave-100s-1617px%20(4).png?alt=media&token=fbd55f89-f412-49b6-8336-6e4a6a63dda0');
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/e-cell-sakec.appspot.com/o/Events%2Fsvg.png?alt=media&token=d57d5410-6502-4796-91b2-ae2b329f3f42');
     background-repeat: no-repeat;
     min-width: 100%;
     background-size: 100% 100%;

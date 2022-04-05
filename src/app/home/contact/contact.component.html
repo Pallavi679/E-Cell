@@ -12,7 +12,7 @@
     </div>
   </div>
 </ng-container> -->
-<div class="mainback">
+<div class="mainback" style="background-color: rgb(129, 129, 129);">
   <ng-container style="min-width: 100%; min-height: 100%; z-index: 1; position: relative;" *ngIf="loading">
     <div class="d-flex justify-content-center loading">
       <div class="loader">
@@ -35,7 +35,7 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-md-4">
+      <!-- <div class="col-md-4">
         <div style="margin: 5%;">
           <div class="instagram shadow" style="border-radius: 10px; padding:5px; color: #000; ">
 
@@ -68,8 +68,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-md-4">
+      </div> -->
+      <!-- <div class="col-md-4">
         <div style="margin: 5%;">
           <div class="instagram shadow" style="border-radius: 10px; padding:5px; color: #000; ">
 
@@ -98,8 +98,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-md-4">
+      </div> -->
+      <!-- <div class="col-md-4">
         <div style="margin: 5%;">
           <div class="instagram shadow" style="border-radius: 10px; padding: 5px; color: #000; ">
 
@@ -127,8 +127,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="row mt-5">
+      </div> -->
+      <div class="row mt-5 shadow contact">
 
         <div class=" col-sm-6 map">
 
@@ -168,7 +168,7 @@
                 10)</small>
             </div>
             <button (click)="contact()" [disabled]="exform.invalid" type="button"
-              class="btn btn-primary">{{buttonText}}</button>
+              class="btn btn-secondary">{{buttonText}}</button>
           </form>
         </div>
         <!-- </div>
@@ -179,12 +179,10 @@
       <div style="width: 100%; " class="d-flex justify-content-center center" style="margin-top: 10%;">
         <div class="mainrow ">
           <ng-container>
-            <div class="shadow p-3">
+            <div class="shadow p-3" style="background-color:#47888b">
               <p class="teamname"> Get the membership
 
-
-
-                <button mat-raised-button color="primary" routerLink='/membership'> Membership </button>
+                <button mat-raised-button  routerLink='/membership'> Membership </button>
 
               </p>
 

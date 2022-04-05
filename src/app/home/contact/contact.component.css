@@ -94,18 +94,18 @@
   
   
   .tag{
-      font-size: 90px;
+      font-size: 83px;
       margin-top: 5%;
       margin-left:35%;
       margin-right: 35%;
       margin-bottom: 0%;
-      color: #000;
+      color: white;
       font-style: italic;
       filter: drop-shadow(3px 3px 3px #222); 
     }
    
   .back{
-      /* background-image: url('https://firebasestorage.googleapis.com/v0/b/e-cell-sakec.appspot.com/o/homepage%2Fpurplewave.png?alt=media&token=cf9e62fb-c8d7-4b2b-9e1f-fe3ffdac866a'); */
+      background-image: url('https://firebasestorage.googleapis.com/v0/b/e-cell-sakec.appspot.com/o/Events%2Fsvg.png?alt=media&token=d57d5410-6502-4796-91b2-ae2b329f3f42');
       background-repeat: no-repeat;
       min-width: 100%;
       background-size: 100% 100%;
@@ -113,8 +113,9 @@
   
   .teamname{
     font-family: Quicksand, sans-serif; 
-    color: royalblue;
+    color: white;
     font-size:20px;
+    /* background-color: rgb(145, 141, 141); */
     
   }
   
@@ -222,12 +223,14 @@
   }  
   
 .tag{
-    font-size: 90px;
-    margin-top: 2%;
+  position: relative;
+  top: -180px;
+    font-size: 81px;
+    margin-top: 20%;
     margin-left:35%;
     margin-right: 35%;
     margin-bottom: 1%;
-    color: #000;
+    color: white;
     font-style: italic;
     filter: drop-shadow(3px 3px 3px #222); 
   }
@@ -346,4 +349,13 @@ mat-form-field{
   /* background-image: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888);  */
   background-color: #e2e4ec;
 }
+.contact{
+  padding-top: 15px;
+  background-color: rgb(181, 181, 181);
+}
+.form-control{
+  background-color: #d0d0;
+  border:2px solid black
+}
+
   
